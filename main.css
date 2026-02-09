@@ -389,6 +389,165 @@ hr {
     color: #333;
 }
 
+/* Certifications Section */
+.certifications {
+    margin: 2rem 0;
+}
+
+.cert-group {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.cert-group h3 {
+    margin-top: 0;
+    color: #1565c0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.cert-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.cert-list li {
+    margin: 0.75rem 0;
+    padding: 0.75rem;
+    background-color: #f9f9f9;
+    border-left: 3px solid #1565c0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #1565c0;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.cert-list a:hover {
+    background-color: #0d47a1;
+    color: white;
+}
+
+.cert-list a i {
+    font-size: 0.8rem;
+}
+
+/* Resources Section */
+.resources {
+    margin: 2rem 0;
+}
+
+.resources-group {
+    margin-bottom: 2rem;
+}
+
+.resources-group h3 {
+    color: #1565c0;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.resource-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.resource-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.resource-card strong {
+    font-size: 1rem;
+    color: #333;
+}
+
+.resource-card p {
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.resource-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #1565c0;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.resource-card a:hover {
+    background-color: #0d47a1;
+    color: white;
+}
+
+.resource-card i {
+    font-size: 0.9rem;
+}
+
+/* CV Download */
+.resources-group > p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.cv-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.cv-download:hover {
+    background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     #content {
@@ -422,5 +581,25 @@ hr {
     .icons {
         gap: 1rem;
         font-size: x-large;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cert-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .cert-list a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cv-download {
+        width: 100%;
+        justify-content: center;
     }
 }
