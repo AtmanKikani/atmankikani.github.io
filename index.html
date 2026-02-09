@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Define title -->
-    <title>Carl Barks</title>
+    <title>Atman Kikani</title>
 
     <!-- Include favicon. Use, e.g., https://favicon.io/ -->
     <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
@@ -39,44 +39,362 @@
   </head>
 
   <body>
-    <section id="content">
-      <!-- Avatar image -->
-      <img src="image.jpg" alt="Carl Barks" class="avatar" />
+    <main id="content">
+      <!-- ========== HERO SECTION ========== -->
+      <section class="hero">
+        <img src="image.jpg" alt="Atman Kikani" class="avatar" />
+        <h1>Atman Kikani</h1>
+        <p class="title">Robotics Researcher | Underwater Autonomy & SLAM</p>
+        <p class="tagline">Building and deploying physics-aware autonomy stacks for AUVs, drones, and embedded robotics</p>
+        
+        <ul class="icons">
+          <li>
+            <a href="mailto:kikaniatman@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/atmankikani" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/AtmanKikani" title="GitHub"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="resume.pdf" title="CV/Resume"><i class="fas fa-file-pdf"></i></a>
+          </li>
+        </ul>
+      </section>
 
-      <!-- Text -->
-      <h1>Hi, I'm Carl Barks!</h1>
-      <p>
-        I am a Ph.D. student in empirical barkology at Woof University.
-      </p>
-      <p>
-        Most of my current research is driven by trying to find an answer to the age-old question of “Who is a good boy?"
-      </p>
-      <p>
-        Please feel free to get in touch!
-      </p>
+      <hr />
 
-      <!-- Icons -->
-      <ul class="icons">
-        <li>
-          <a href="" title="Institutional website"><i class="fas fa-university"></i></a>
-        </li>
-        <li>
-          <a href="" title="E-Mail"><i class="fas fa-envelope"></i></a>
-        </li>
-        <li>
-          <a href="" title="GitHub"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-          <a href="" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </li>
-        <li>
-          <a href="" title="NASA / ADS"><i class="ai ai-ads"></i></a>
-        </li>
-        <li>
-          <a href="" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-        </li>
-      </ul>
-    </section>
+      <!-- ========== AT A GLANCE SECTION ========== -->
+      <section class="at-a-glance">
+        <h2>At a Glance</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Robotic Platforms Built</div>
+            <p>AUV, monocopter, Cubli, custom sensors</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Research Projects</div>
+            <p>MARVO, HADVel, HADVel-E</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2</div>
+            <div class="stat-label">International Competitions</div>
+            <p>TAC Norway 2024 (2nd place), IEEE Singapore 2025</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50 Hz</div>
+            <div class="stat-label">Real-Time Performance</div>
+            <p>Embedded velocity estimation on AUV</p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- ========== PROJECTS SECTION ========== -->
+      <section class="projects">
+        <h2>Projects</h2>
+
+        <article class="project-card">
+          <img src="images/mira.jpg" alt="MIRA 2.0 AUV" class="project-image" />
+          <div class="project-content">
+            <h3>MIRA 2.0 – Autonomous Underwater Vehicle</h3>
+            <p class="project-meta">IEEE OES Singapore AUV Challenge 2025 | TAC Norway 2024 – 2nd Place</p>
+            <ul>
+              <li><strong>6-DOF Control:</strong> Cascaded PID, MPC</li>
+              <li><strong>Mission Planning:</strong> Fuzzy logic replacing brittle decision trees</li>
+              <li><strong>ROS2-MAVLINK Integration:</strong> 60% latency reduction in control loop</li>
+              <li><strong>System Identification:</strong> LSE/MLE hydrodynamic parameter estimation</li>
+              <li><strong>Asynchronous Sensor Acquisition:</strong> 35% sampling rate increase</li>
+              <li><strong>Hardware:</strong> Jetson Xavier NX, Pixhawk 4, 6× T200 thrusters</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/marvo.jpg" alt="MARVO SLAM" class="project-image" />
+          <div class="project-content">
+            <h3>MARVO – Marine-Adaptive Radiance-aware Visual Odometry</h3>
+            <p class="project-meta">Submitted to CVPR 2026</p>
+            <ul>
+              <li><strong>Underwater Visual-Inertial SLAM:</strong> Robust in turbid environments</li>
+              <li><strong>Transformer-based Feature Matching:</strong> Advanced perception for complex aquatic scenes</li>
+              <li><strong>Physics-aware Radiance Correction:</strong> Models color-channel attenuation with depth</li>
+              <li><strong>Multi-Sensor Fusion (GTSAM):</strong> Visual odometry, IMU, barometer</li>
+              <li><strong>Pose Graph Optimization:</strong> RL-based approach using SAC algorithm</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/hadvel.jpg" alt="HADVel Velocity Estimation" class="project-image" />
+          <div class="project-content">
+            <h3>HADVel – Hydrodynamics Aware Deep Velocity Estimation</h3>
+            <p class="project-meta">In preparation for IEEE Robotics and Automation Letters</p>
+            <ul>
+              <li><strong>Physics-informed LSTM:</strong> Sensor fusion architecture</li>
+              <li><strong>Real-time Performance:</strong> 50 Hz velocity estimation</li>
+              <li><strong>Accuracy & Noise Reduction:</strong> Sub-cm/s accuracy, 42% noise reduction vs baseline</li>
+              <li><strong>Sensor Integration:</strong> Pressure, IMU, DVL-like differential pressure</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/hadvel-e.jpg" alt="HADVel-E Embedded" class="project-image" />
+          <div class="project-content">
+            <h3>HADVel-E – Embedded Hardware Implementation</h3>
+            <p class="project-meta">In preparation for IEEE Sensors journal</p>
+            <ul>
+              <li><strong>Custom PCB Design:</strong> EasyEDA with pressure sensors and IMU</li>
+              <li><strong>Real-time Embedded Deployment:</strong> STM32/ESP32 implementation</li>
+              <li><strong>Complete Underwater Solution:</strong> Production-ready sensor module</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/monocopter.jpg" alt="Thrust-Vectored Monocopter" class="project-image" />
+          <div class="project-content">
+            <h3>Thrust-Vectored Monocopter</h3>
+            <p class="project-meta">Autonomous Single-Rotor Aerial Platform</p>
+            <ul>
+              <li><strong>Vectored Thrust Control:</strong> Custom Pixhawk firmware for asymmetric dynamics</li>
+              <li><strong>Flight Performance:</strong> 8-minute flight time at 0.3kg total weight</li>
+              <li><strong>Autonomous Flight:</strong> Cascaded attitude and position control</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/cubli.jpg" alt="ESP32 Cubli" class="project-image" />
+          <div class="project-content">
+            <h3>ESP32 Cubli – Reaction-Wheel Inverted Pendulum</h3>
+            <p class="project-meta">3-DOF Control Systems Testbed</p>
+            <ul>
+              <li><strong>Control Algorithms:</strong> Validated PID and backstepping controllers</li>
+              <li><strong>Advanced Control:</strong> Benchmarking MPC and LQR algorithms</li>
+              <li><strong>Open Source:</strong> MATLAB toolbox for control algorithm evaluation</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/dpss.jpg" alt="DPSS Sensor" class="project-image" />
+          <div class="project-content">
+            <h3>DPSS – Differential Pressure Speed Sensor</h3>
+            <p class="project-meta">Underwater Velocity Measurement System</p>
+            <ul>
+              <li><strong>Sensor Fusion:</strong> Differential pressure + 9-DOF IMU</li>
+              <li><strong>Robust Estimation:</strong> Advanced fusion for accurate velocity measurement</li>
+              <li><strong>Integration:</strong> Hardware prototype for AUV deployment; precursor to HADVel</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-content">
+            <h3>Smart Elevator System</h3>
+            <p class="project-meta">Indian Patent Office Application No. 202441007367</p>
+            <ul>
+              <li><strong>IoT Optimization:</strong> Smart elevator system with advanced features</li>
+              <li><strong>Computer Vision:</strong> YOLOv8 person detection and IR sensors</li>
+              <li><strong>Predictive Management:</strong> Energy-aware optimization</li>
+              <li><strong>Co-inventors:</strong> Dr. Sahaya Beni Prathiba B</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- ========== RESEARCH SECTION ========== -->
+      <section class="research">
+        <h2>Research & Publications</h2>
+
+        <article class="publication">
+          <h3>MARVO: Marine-Adaptive Radiance-aware Visual Odometry</h3>
+          <p class="publication-meta">Atman Kikani, Dr. A Nayeemulla Khan</p>
+          <p class="publication-venue"><strong>Venue:</strong> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)</p>
+          <p class="publication-status"><strong>Status:</strong> Under review (submitted November 2025)</p>
+        </article>
+
+        <article class="publication">
+          <h3>HADVel: Hydrodynamics Aware Deep Velocity Estimation for AUVs</h3>
+          <p class="publication-meta">Atman Kikani, Dr. Harini S, Dr. K Karunamurthy</p>
+          <p class="publication-venue"><strong>Venue:</strong> IEEE Robotics and Automation Letters</p>
+          <p class="publication-status"><strong>Status:</strong> Manuscript in preparation</p>
+        </article>
+
+        <article class="publication">
+          <h3>HADVel-E: Real Time Embedded Deployment of Hydrodynamics Aware Deep Velocity Estimation</h3>
+          <p class="publication-meta">Atman Kikani, Dr. Harini S, Dr. K Karunamurthy</p>
+          <p class="publication-venue"><strong>Venue:</strong> IEEE Sensors</p>
+          <p class="publication-status"><strong>Status:</strong> Manuscript in preparation</p>
+        </article>
+
+        <article class="publication">
+          <h3>A Smart Elevator System and Method Thereof</h3>
+          <p class="publication-meta"><strong>Patent:</strong> Indian Patent Office Application No. 202441007367</p>
+          <p class="publication-status"><strong>Filed:</strong> July 2023 – February 2024 | <strong>Advisor:</strong> Dr. Sahaya Beni Prathiba B</p>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- ========== COMPETITIONS & LEADERSHIP SECTION ========== -->
+      <section class="competitions">
+        <h2>Competitions & Leadership</h2>
+
+        <article class="competition">
+          <img src="images/tac-norway.jpg" alt="TAC Norway 2024" class="competition-image" />
+          <div class="competition-content">
+            <h3>TAC Challenge 2024, Norway – 2nd Place</h3>
+            <p class="competition-meta">International AUV Competition</p>
+            <ul>
+              <li><strong>Control Stack:</strong> Cascaded PID across 6 DOF</li>
+              <li><strong>Optimization:</strong> 60% control loop latency reduction via ROS-MAVLINK</li>
+              <li><strong>Tuning:</strong> Adaptive gradient descent for PID parameter optimization</li>
+              <li><strong>Tasks:</strong> Subsea docking, pipeline inspection, object detection, valve manipulation, autonomous navigation, wireless communications</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="competition">
+          <h3>IEEE OES Singapore AUV Challenge 2025</h3>
+          <p class="competition-meta">Current Competition</p>
+          <ul>
+            <li><strong>Platform:</strong> Project MIRA 2.0</li>
+            <li><strong>Focus:</strong> Complete autonomy stack – control, perception, mission planning</li>
+            <li><strong>Integration:</strong> System integration and comprehensive testing</li>
+          </ul>
+        </article>
+
+        <article class="leadership">
+          <h3>Dreadnought Robotics, VIT Chennai – Leadership</h3>
+          <ul>
+            <li>
+              <strong>Sep 2024 – Present:</strong> AUV Head / Technical Head
+            </li>
+            <li>
+              <strong>Sep 2023 – Sep 2024:</strong> Deputy Team Lead / Head of Operations
+            </li>
+            <li>
+              <strong>Apr 2023 – Oct 2023:</strong> Member of Programming and Analysis (Controls Lead)
+            </li>
+            <li>
+              <strong>Award:</strong> Best Special Team 2023-24
+            </li>
+            <li>
+              <strong>Mentorship:</strong> Guided 8 junior members in ROS2, embedded systems, and control theory
+            </li>
+            <li>
+              <strong>Outreach:</strong> Delivered 4 technical workshops
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- ========== EXPERIENCE SECTION ========== -->
+      <section class="experience">
+        <h2>Experience</h2>
+
+        <article class="job">
+          <h3>R&D Summer Intern – Tata Communications Ltd.</h3>
+          <p class="job-meta">May 2024 – July 2024 | Pune</p>
+          <ul>
+            <li><strong>5G-enabled Telerobotics:</strong> Real-time control of collaborative robots (COBOTs)</li>
+            <li><strong>Perception:</strong> Custom facial recognition and finger tracking models using OpenCV and PyTorch</li>
+            <li><strong>Cloud Control:</strong> Low-latency architecture targeting &lt;20ms round-trip delay</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>Research Intern – Mafkin Robotics</h3>
+          <p class="job-meta">November 2024 – Present | Remote</p>
+          <ul>
+            <li><strong>3D Localization:</strong> Multi-sensor fusion approach combining LiDAR, IMU, and wheel odometry</li>
+            <li><strong>SLAM:</strong> Advanced localization for autonomous cleaning robots</li>
+            <li><strong>State Estimation:</strong> Extended Kalman Filter implementation for robust pose estimation</li>
+          </ul>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- ========== TECHNICAL SKILLS SECTION ========== -->
+      <section class="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages & Frameworks</h3>
+            <p>C, C++, Python, ROS, ROS2, OpenCV, PyTorch, TensorFlow, GTSAM</p>
+          </div>
+
+          <div class="skill-category">
+            <h3>Robotics & Control</h3>
+            <p>6-DOF control (PID, MPC, LQR), system identification, sensor fusion, path planning, mission planning, fuzzy logic, visual-inertial odometry, SLAM, pose graph optimization</p>
+          </div>
+
+          <div class="skill-category">
+            <h3>Deep Learning</h3>
+            <p>PyTorch, TensorFlow, LSTMs, Transformers, Reinforcement Learning (SAC), physics-informed neural networks</p>
+          </div>
+
+          <div class="skill-category">
+            <h3>Embedded & Real-Time</h3>
+            <p>Jetson Xavier NX/Nano, Raspberry Pi, STM32, ESP32, Pixhawk, MAVLINK, 50Hz+ control loops</p>
+          </div>
+
+          <div class="skill-category">
+            <h3>Simulation & Tools</h3>
+            <p>MATLAB/Simulink, Gazebo, ISAAC Sim, CoppeliaSim, Docker, Git/GitHub, EasyEDA (PCB design)</p>
+          </div>
+
+          <div class="skill-category">
+            <h3>Robotic Platforms</h3>
+            <p>Autonomous Underwater Vehicles (AUVs), thrust-vectored monocopters, reaction-wheel inverted pendulums, AMD KRIA</p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- ========== EDUCATION SECTION ========== -->
+      <section class="education">
+        <h2>Education</h2>
+
+        <article class="degree">
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <p class="education-meta">Specialization in AI and Robotics</p>
+          <p><strong>Institution:</strong> Vellore Institute of Technology, Chennai</p>
+          <p><strong>Duration:</strong> 2022 – 2026 | <strong>CGPA:</strong> 8.4/10</p>
+          <p class="education-coursework"><strong>Relevant Coursework:</strong> ML for Robotics, Robot Programming, Robotic Perception, Autonomous Drones, Kinematics Dynamics & Motion Control</p>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- ========== CONTACT SECTION ========== -->
+      <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          <strong>Email:</strong> <a href="mailto:kikaniatman@gmail.com">kikaniatman@gmail.com</a><br />
+          <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/atmankikani">linkedin.com/in/atmankikani</a><br />
+          <strong>GitHub:</strong> <a href="https://github.com/AtmanKikani">github.com/AtmanKikani</a><br />
+          <strong>Location:</strong> Pune, Maharashtra, India
+        </p>
+        <p class="cta">
+          I am currently seeking robotics research internships across India (IITs, DRDO, ISRO, robotics startups) and preparing for MS Robotics applications to CMU, MIT, Berkeley, Stanford, and ETH Zurich (Fall 2027).
+        </p>
+      </section>
+    </main>
   </body>
  
 </html>
