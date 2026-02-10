@@ -65,496 +65,320 @@
 
       <hr />
 
-      <!-- ========== AT A GLANCE SECTION ========== -->
-      <section class="at-a-glance">
-        <h2>At a Glance</h2>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number">6+</div>
-            <div class="stat-label">Robotic Platforms Built</div>
-            <p>AUV, monocopter, Cubli, custom sensors</p>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">3</div>
-            <div class="stat-label">Research Projects</div>
-            <p>MARVO, HADVel, HADVel-E</p>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">2</div>
-            <div class="stat-label">International Competitions</div>
-            <p>TAC Norway 2024 (2nd place), IEEE Singapore 2025</p>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">50 Hz</div>
-            <div class="stat-label">Real-Time Performance</div>
-            <p>Embedded velocity estimation on AUV</p>
-          </div>
+      <!-- ========== ENGINEERING PROJECTS GRID ========== -->
+      <section class="projects-grid-section">
+        <h2>Engineering Projects</h2>
+        <div class="projects-grid">
+          
+          <a href="projects/cubli.html" class="project-grid-card">
+            <div class="grid-card-media">
+              <video src="supplementary/Videos%20and%20Photos/Self%20Balancing%20Cube/2cc9efd7-8e87-470b-9004-91a34e4cacb2.mov" alt="ESP32 Cubli reaction wheel pendulum" autoplay muted loop></video>
+              <div class="grid-card-overlay">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <h3>ESP32 Cubli</h3>
+              <p>3-DOF reaction-wheel inverted pendulum</p>
+              <div class="grid-tags">
+                <span class="grid-tag">Control</span>
+                <span class="grid-tag">Real-time</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/monocopter.html" class="project-grid-card project-grid-card--featured">
+            <div class="grid-card-media grid-card-media--video">
+              <video src="supplementary/Videos%20and%20Photos/Thrust%20vectored%20Monocopter/Monocopter-Thrust%20Control%20SUrfaces%20preflight%20Tests.mp4" alt="Thrust-vectored monocopter aerial drone" autoplay muted loop></video>
+              <div class="grid-card-overlay">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <h3>Thrust-Vectored Monocopter</h3>
+              <p>Single-rotor autonomous aerial platform</p>
+              <div class="grid-tags">
+                <span class="grid-tag">Aerial</span>
+                <span class="grid-tag">Control</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/imu-surface-mapper.html" class="project-grid-card">
+            <div class="grid-card-media">
+              <img src="supplementary/Project%20Posters/IMU_based_surface_mapping_in_differential_drive_robots_page-0001.jpg" alt="IMU-based surface mapping robot poster" />
+              <div class="grid-card-overlay">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <h3>IMU Surface Mapper</h3>
+              <p>Differential drive robot localization</p>
+              <div class="grid-tags">
+                <span class="grid-tag">SLAM</span>
+                <span class="grid-tag">Embedded</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#research-hadvel" class="project-grid-card">
+            <div class="grid-card-media">
+              <img src="images/dpss.jpg" alt="DPSS differential pressure sensor" />
+              <div class="grid-card-overlay">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <h3>DPSS Hardware</h3>
+              <p>Precursor to HADVel velocity estimation</p>
+              <div class="grid-tags">
+                <span class="grid-tag">Sensor Fusion</span>
+                <span class="grid-tag">AUV</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/auv-mocap.html" class="project-grid-card">
+            <div class="grid-card-media">
+              <img src="images/mocap.jpg" alt="AUV motion capture system" />
+              <div class="grid-card-overlay">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <h3>AUV Motion Capture</h3>
+              <p>Real-time vehicle tracking and telemetry</p>
+              <div class="grid-tags">
+                <span class="grid-tag">Vision</span>
+                <span class="grid-tag">AUV</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects/smart-elevator.html" class="project-grid-card">
+            <div class="grid-card-media">
+              <img src="images/elevator.jpg" alt="Smart elevator IoT system" />
+              <div class="grid-card-overlay">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <div class="grid-card-content">
+              <h3>Smart Elevator System</h3>
+              <p>IoT patent: YOLOv8 + predictive dispatch</p>
+              <div class="grid-tags">
+                <span class="grid-tag">IoT</span>
+                <span class="grid-tag">Patent</span>
+              </div>
+            </div>
+          </a>
+
         </div>
       </section>
 
       <hr />
 
-      <!-- ========== PROJECTS SECTION ========== -->
-      <section class="projects">
-        <h2>Projects</h2>
+      <!-- ========== DREADNOUGHT ROBOTICS & COMPETITIONS SECTION ========== -->
+      <section class="dreadnought-section" id="competitions">
+        <h2>Dreadnought Robotics & Competitions</h2>
 
-        <article class="project-card">
-          <div class="award-badge">
-            <i class="fas fa-trophy"></i> 2nd Place
+        <div class="timeline-container">
+          
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>TAC Challenge 2024, Norway</h3>
+              <p class="timeline-date"><strong>November 2024</strong> • <strong class="award">2nd Place</strong></p>
+              <p>Comprehensive AUV competition featuring 6-DOF control, mission planning, and real-time system integration. Achieved 60% latency reduction in control loop and adaptive PID tuning.</p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">ROS2</span>
+                <span class="timeline-tag">Control</span>
+                <span class="timeline-tag">System Integration</span>
+              </div>
+            </div>
           </div>
-          <div class="project-media">
-            <img src="images/mira.jpg" alt="MIRA 2.0 AUV during testing" class="project-image" />
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>IEEE OES Singapore AUV Challenge 2025</h3>
+              <p class="timeline-date"><strong>February 2025 – Present</strong> • Current</p>
+              <p>Full autonomy stack implementation using MIRA 2.0 platform. Focus on control, perception, mission planning, and end-to-end system integration under competition conditions.</p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">MIRA 2.0</span>
+                <span class="timeline-tag">Autonomy</span>
+                <span class="timeline-tag">Real-time</span>
+              </div>
+            </div>
           </div>
-          <div class="project-content">
-            <h3>MIRA 2.0 – Autonomous Underwater Vehicle</h3>
-            <p class="project-meta">IEEE OES Singapore AUV Challenge 2025 | TAC Norway 2024</p>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Dreadnought Robotics Leadership</h3>
+              <p class="timeline-date"><strong>Sep 2024 – Present</strong> • AUV Head / Technical Head</p>
+              <ul class="timeline-list">
+                <li><strong>Sep 2023 – Sep 2024:</strong> Deputy Team Lead / Head of Operations</li>
+                <li><strong>Apr 2023 – Oct 2023:</strong> Member of Programming and Analysis (Controls Lead)</li>
+                <li><strong>Award:</strong> Best Special Team 2023-24</li>
+                <li><strong>Mentorship:</strong> Guided 8 junior members in ROS2, embedded systems, and control theory</li>
+                <li><strong>Outreach:</strong> Delivered 4 technical workshops</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- MIRA Deep Dive -->
+        <div class="mira-showcase">
+          <h3>MIRA 2.0 – Autonomous Underwater Vehicle</h3>
+          <p class="mira-tagline">Advanced 6-DOF AUV for competition autonomy and real-world deployment</p>
+          
+          <div class="mira-grid">
+            <div class="mira-media">
+              <img src="images/mira.jpg" alt="MIRA 2.0 AUV" class="mira-image" />
+            </div>
             
-            <div class="tech-tags">
-              <span class="tag tag-ros">ROS2</span>
-              <span class="tag tag-control">MPC</span>
-              <span class="tag tag-hardware">Jetson Xavier NX</span>
-              <span class="tag tag-hardware">Pixhawk 4</span>
-            </div>
-
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <div class="highlight-value">60%</div>
-                <div class="highlight-label">Latency ↓</div>
+            <div class="mira-content">
+              <div class="mira-metrics">
+                <div class="mira-metric">
+                  <div class="metric-value">60%</div>
+                  <div class="metric-label">Latency Reduction</div>
+                </div>
+                <div class="mira-metric">
+                  <div class="metric-value">35%</div>
+                  <div class="metric-label">Sampling Increase</div>
+                </div>
+                <div class="mira-metric">
+                  <div class="metric-value">6-DOF</div>
+                  <div class="metric-label">Control Stack</div>
+                </div>
               </div>
-              <div class="highlight-item">
-                <div class="highlight-value">35%</div>
-                <div class="highlight-label">Sampling ↑</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">6-DOF</div>
-                <div class="highlight-label">Control Stack</div>
-              </div>
-            </div>
 
-            <ul>
-              <li><strong>6-DOF Control:</strong> Cascaded PID, MPC for stable vehicle maneuvering</li>
-              <li><strong>Mission Planning:</strong> Fuzzy logic replacing brittle decision trees; adaptive behaviors</li>
-              <li><strong>ROS2-MAVLINK Integration:</strong> 60% latency reduction in control loop through optimized message queuing</li>
-              <li><strong>System Identification:</strong> LSE/MLE hydrodynamic parameter estimation for accurate dynamics modeling</li>
-              <li><strong>Asynchronous Sensor Acquisition:</strong> 35% sampling rate increase via buffered acquisition pipeline</li>
-              <li><strong>Hardware:</strong> Jetson Xavier NX, Pixhawk 4, 6× T200 thrusters, multi-sensor suite</li>
-            </ul>
+              <div class="mira-tech">
+                <strong>Technology Stack:</strong>
+                <div class="tech-tags">
+                  <span class="tag tag-ros">ROS2</span>
+                  <span class="tag tag-control">MPC</span>
+                  <span class="tag tag-hardware">Jetson Xavier NX</span>
+                  <span class="tag tag-hardware">Pixhawk 4</span>
+                </div>
+              </div>
 
-            <div class="project-actions">
-              <a href="supplementary/Videos and Photos/Mira - Autonomous Underwater Vehicle/" class="project-link" target="_blank">
-                <i class="fas fa-folder-open"></i> View Gallery
-              </a>
-              <a href="supplementary/Competition Certificates/TAC Challenge 2024 Dreadnought Second Place.pdf" class="project-link" target="_blank">
-                <i class="fas fa-award"></i> TAC Certificate
-              </a>
+              <ul class="mira-features">
+                <li><strong>6-DOF Control:</strong> Cascaded PID, MPC for stable vehicle maneuvering</li>
+                <li><strong>Mission Planning:</strong> Fuzzy logic replacing brittle decision trees; adaptive behaviors</li>
+                <li><strong>ROS2-MAVLINK Integration:</strong> 60% latency reduction through optimized message queuing</li>
+                <li><strong>System Identification:</strong> LSE/MLE hydrodynamic parameter estimation</li>
+                <li><strong>Asynchronous Sensor Acquisition:</strong> 35% sampling rate increase via buffered pipeline</li>
+                <li><strong>Hardware:</strong> Jetson Xavier NX, Pixhawk 4, 6× T200 thrusters, multi-sensor suite</li>
+              </ul>
+
+              <div class="mira-actions">
+                <a href="supplementary/Videos and Photos/Mira - Autonomous Underwater Vehicle/" class="action-link" target="_blank">
+                  <i class="fas fa-folder-open"></i> View Media
+                </a>
+                <a href="supplementary/Competition Certificates/TAC Challenge 2024 Dreadnought Second Place.pdf" class="action-link" target="_blank">
+                  <i class="fas fa-award"></i> TAC Certificate
+                </a>
+              </div>
             </div>
           </div>
-        </article>
+        </div>
 
-        <article class="project-card">
-          <div class="project-media">
-            <img src="images/marvo.jpg" alt="MARVO underwater SLAM system" class="project-image" />
+      </section>
+
+      <hr />
+
+      <!-- ========== RESEARCH SPOTLIGHT SECTION ========== -->
+      <section class="research-spotlight" id="research-hadvel">
+        <h2>Research Spotlight</h2>
+
+        <article class="research-project">
+          <h3>HADVel: Hydrodynamics Aware Deep Velocity Estimation</h3>
+          <p class="research-intro">From hardware sensors (DPSS) to physics-informed deep learning for real-time AUV velocity estimation</p>
+          
+          <div class="research-narrative">
+            <p><strong>Problem:</strong> Traditional velocity estimation on AUVs suffers from sensor noise and latency. DPSS provided hardware-level fusion; HADVel elevates this with physics-informed neural networks.</p>
+            <p><strong>Solution:</strong> A hybrid LSTM architecture that combines hydrodynamic constraints with multi-sensor fusion, achieving 50 Hz real-time performance and sub-cm/s accuracy—42% noise reduction over baseline filters.</p>
           </div>
-          <div class="project-content">
-            <h3>MARVO – Marine-Adaptive Radiance-aware Visual Odometry</h3>
-            <p class="project-meta">Submitted to CVPR 2026 | Underwater Visual-Inertial SLAM</p>
-            
-            <div class="tech-tags">
-              <span class="tag tag-slam">SLAM</span>
-              <span class="tag tag-dl">Transformers</span>
-              <span class="tag tag-dl">PyTorch</span>
-              <span class="tag tag-ros">GTSAM</span>
-            </div>
 
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <div class="highlight-value">CVPR</div>
-                <div class="highlight-label">2026 Submission</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">RL</div>
-                <div class="highlight-label">Pose Graph Opt</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">Turbid</div>
-                <div class="highlight-label">Underwater Ready</div>
-              </div>
-            </div>
-
-            <ul>
-              <li><strong>Underwater Visual-Inertial SLAM:</strong> Robust odometry in turbid, low-visibility environments</li>
-              <li><strong>Transformer-based Feature Matching:</strong> Advanced perception for complex aquatic scenes; superior correspondence accuracy</li>
-              <li><strong>Physics-aware Radiance Correction:</strong> Proprietary model for color-channel attenuation with depth; real physics in the loop</li>
-              <li><strong>Multi-Sensor Fusion (GTSAM):</strong> Seamless integration of visual odometry, IMU, and barometer for robust state estimation</li>
-              <li><strong>Pose Graph Optimization:</strong> RL-based approach using Soft Actor-Critic (SAC) algorithm for optimal trajectory estimation</li>
-            </ul>
-
-            <div class="project-actions">
-              <a href="supplementary/Publications, Drafts and Results/MARVO/MARVO_CVPR_26.pdf" class="project-link" target="_blank">
-                <i class="fas fa-file-pdf"></i> Read Paper
-              </a>
-              <a href="supplementary/Publications, Drafts and Results/MARVO/images/" class="project-link" target="_blank">
-                <i class="fas fa-images"></i> View Gallery
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-media">
-            <img src="images/hadvel.jpg" alt="HADVel velocity estimation system" class="project-image" />
-          </div>
-          <div class="project-content">
-            <h3>HADVel – Hydrodynamics Aware Deep Velocity Estimation</h3>
-            <p class="project-meta">In preparation for IEEE Robotics and Automation Letters</p>
-            
-            <div class="tech-tags">
-              <span class="tag tag-dl">LSTM</span>
-              <span class="tag tag-ros">Sensor Fusion</span>
-              <span class="tag tag-dl">PyTorch</span>
-              <span class="tag tag-hardware">AUV</span>
-            </div>
-
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <div class="highlight-value">50 Hz</div>
-                <div class="highlight-label">Real-time</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">sub-cm/s</div>
-                <div class="highlight-label">Accuracy</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">42%</div>
-                <div class="highlight-label">Noise ↓</div>
-              </div>
-            </div>
-
-            <ul>
-              <li><strong>Physics-informed LSTM:</strong> Hybrid sensor fusion architecture combining neural learning with hydrodynamic constraints</li>
-              <li><strong>Real-time Performance:</strong> 50 Hz velocity estimation on embedded platforms without GPU</li>
-              <li><strong>Accuracy & Noise Reduction:</strong> Sub-cm/s accuracy achieved; 42% noise reduction compared to baseline filter</li>
-              <li><strong>Multi-Sensor Integration:</strong> Pressure sensor, 9-DOF IMU, DVL-like differential pressure measurements</li>
-            </ul>
-
-            <div class="project-actions">
-              <a href="supplementary/Publications, Drafts and Results/HaDVel/Initial_Report_Draft.pdf" class="project-link" target="_blank">
+          <div class="hadvel-papers">
+            <div class="publication-card">
+              <h4>HADVel – Core Methodology</h4>
+              <p class="pub-venue"><strong>Venue:</strong> IEEE Robotics and Automation Letters</p>
+              <p class="pub-status"><strong>Status:</strong> Manuscript in preparation</p>
+              <p class="pub-desc">Physics-informed LSTM architecture for sensor fusion. 50 Hz real-time velocity estimation. Sub-cm/s accuracy, 42% noise reduction.</p>
+              <a href="supplementary/Publications, Drafts and Results/HaDVel/Initial_Report_Draft.pdf" class="pub-link" target="_blank">
                 <i class="fas fa-file-pdf"></i> Read Report
               </a>
-              <a href="supplementary/Publications, Drafts and Results/HaDVel/images/" class="project-link" target="_blank">
-                <i class="fas fa-images"></i> View Images
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-media">
-            <img src="images/hadvel-e.jpg" alt="HADVel-E embedded PCB" class="project-image" />
-          </div>
-          <div class="project-content">
-            <h3>HADVel-E – Embedded Hardware Implementation</h3>
-            <p class="project-meta">In preparation for IEEE Sensors journal</p>
-            
-            <div class="tech-tags">
-              <span class="tag tag-embedded">Embedded</span>
-              <span class="tag tag-hardware">STM32</span>
-              <span class="tag tag-hardware">ESP32</span>
-              <span class="tag tag-hardware">PCB Design</span>
             </div>
 
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <div class="highlight-value">Custom</div>
-                <div class="highlight-label">PCB Design</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">Real-time</div>
-                <div class="highlight-label">Embedded</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">Prod.</div>
-                <div class="highlight-label">Ready</div>
-              </div>
-            </div>
-
-            <ul>
-              <li><strong>Custom PCB Design:</strong> EasyEDA schematic and layout with integrated pressure sensors and 9-DOF IMU</li>
-              <li><strong>Real-time Embedded Deployment:</strong> STM32/ESP32 dual implementation for flexibility and performance optimization</li>
-              <li><strong>Complete Underwater Solution:</strong> Production-ready sensor module; integration-tested with AUV platform</li>
-            </ul>
-
-            <div class="project-actions">
-              <a href="supplementary/Publications, Drafts and Results/HaDVel/images/" class="project-link" target="_blank">
+            <div class="publication-card">
+              <h4>HADVel-E – Embedded Implementation</h4>
+              <p class="pub-venue"><strong>Venue:</strong> IEEE Sensors</p>
+              <p class="pub-status"><strong>Status:</strong> Manuscript in preparation</p>
+              <p class="pub-desc">Custom PCB design (STM32/ESP32) with integrated pressure sensors and 9-DOF IMU. Production-ready sensor module for AUV deployment.</p>
+              <a href="supplementary/Publications, Drafts and Results/HaDVel/images/" class="pub-link" target="_blank">
                 <i class="fas fa-images"></i> PCB & Design
               </a>
             </div>
           </div>
-        </article>
 
-        <article class="project-card">
-          <div class="project-media">
-            <img src="images/monocopter.jpg" alt="Thrust-vectored monocopter in flight" class="project-image" />
-          </div>
-          <div class="project-content">
-            <h3>Thrust-Vectored Monocopter</h3>
-            <p class="project-meta">Autonomous Single-Rotor Aerial Platform</p>
-            
-            <div class="tech-tags">
-              <span class="tag tag-hardware">Pixhawk</span>
-              <span class="tag tag-control">Control Systems</span>
-              <span class="tag tag-hardware">Aerial</span>
-            </div>
-
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <div class="highlight-value">8 min</div>
-                <div class="highlight-label">Flight Time</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">0.3 kg</div>
-                <div class="highlight-label">Total Weight</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">Firmware</div>
-                <div class="highlight-label">Custom</div>
-              </div>
-            </div>
-
-            <ul>
-              <li><strong>Vectored Thrust Control:</strong> Custom Pixhawk firmware variant for asymmetric dynamics and quaternion-based attitude control</li>
-              <li><strong>Flight Performance:</strong> 8-minute endurance at 0.3 kg total weight; competitive with multi-rotor platforms</li>
-              <li><strong>Autonomous Flight:</strong> Cascaded attitude and position control loops; GPS/RTK integration for precise waypoint navigation</li>
-            </ul>
-
-            <div class="project-actions">
-              <a href="supplementary/Videos and Photos/Thrust vectored Monocopter/" class="project-link" target="_blank">
-                <i class="fas fa-video"></i> View Media
-              </a>
-              <a href="supplementary/Project Posters/Monocopter_Single Rotor Vectored Thrust Drone projectPoster.pdf" class="project-link" target="_blank">
-                <i class="fas fa-file-pdf"></i> Poster
-              </a>
-            </div>
+          <div class="research-tags">
+            <span class="research-tag">LSTM</span>
+            <span class="research-tag">Physics-Informed NN</span>
+            <span class="research-tag">Sensor Fusion</span>
+            <span class="research-tag">Real-time Embedded</span>
+            <span class="research-tag">AUV</span>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-media">
-            <img src="images/cubli.jpg" alt="ESP32 Cubli self-balancing robot" class="project-image" />
-          </div>
-          <div class="project-content">
-            <h3>ESP32 Cubli – Reaction-Wheel Inverted Pendulum</h3>
-            <p class="project-meta">3-DOF Control Systems Testbed</p>
-            
-            <div class="tech-tags">
-              <span class="tag tag-control">MPC</span>
-              <span class="tag tag-control">LQR</span>
-              <span class="tag tag-hardware">ESP32</span>
-              <span class="tag tag-embedded">Real-time</span>
-            </div>
+        <hr style="margin: 2rem 0;" />
 
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <div class="highlight-value">3-DOF</div>
-                <div class="highlight-label">Full Control</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">PID, MPC</div>
-                <div class="highlight-label">Algorithms</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">Open Source</div>
-                <div class="highlight-label">MATLAB Toolbox</div>
-              </div>
-            </div>
-
-            <ul>
-              <li><strong>Control Algorithms:</strong> Validated PID and backstepping controllers on experimental platform</li>
-              <li><strong>Advanced Control:</strong> Active benchmarking of Model Predictive Control (MPC) and Linear Quadratic Regulator (LQR) schemes</li>
-              <li><strong>Open Source:</strong> MATLAB toolbox for rapid prototyping and control algorithm evaluation; community-driven development</li>
-            </ul>
-
-            <div class="project-actions">
-              <a href="supplementary/Videos and Photos/Self Balancing Cube/" class="project-link" target="_blank">
-                <i class="fas fa-video"></i> View Videos
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-media">
-            <img src="images/dpss.jpg" alt="DPSS sensor apparatus" class="project-image" />
-          </div>
-          <div class="project-content">
-            <h3>DPSS – Differential Pressure Speed Sensor</h3>
-            <p class="project-meta">Underwater Velocity Measurement System</p>
-            
-            <div class="tech-tags">
-              <span class="tag tag-ros">Sensor Fusion</span>
-              <span class="tag tag-hardware">AUV</span>
-              <span class="tag tag-embedded">IMU</span>
-            </div>
-
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <div class="highlight-value">Multi</div>
-                <div class="highlight-label">Sensor Fusion</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">9-DOF</div>
-                <div class="highlight-label">IMU Integration</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">AUV</div>
-                <div class="highlight-label">Deployment Ready</div>
-              </div>
-            </div>
-
-            <ul>
-              <li><strong>Sensor Fusion:</strong> Differential pressure sensors + 9-DOF IMU integration for robust velocity measurement</li>
-              <li><strong>Advanced Estimation:</strong> Kalman filtering and adaptive fusion for accurate velocity vector estimation</li>
-              <li><strong>Integration:</strong> Hardware prototype deployed on AUV platform; precursor technology to HADVel deep-learning approach</li>
-            </ul>
-
-            <div class="project-actions">
-              <a href="supplementary/Publications, Drafts and Results/HaDVel/images/" class="project-link" target="_blank">
-                <i class="fas fa-images"></i> Hardware Images
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-content">
-            <h3>Smart Elevator System</h3>
-            <p class="project-meta">Indian Patent Office Application No. 202441007367</p>
-            
-            <div class="tech-tags">
-              <span class="tag tag-dl">IoT</span>
-              <span class="tag tag-dl">YOLOv8</span>
-              <span class="tag tag-dl">Computer Vision</span>
-              <span class="tag tag-embedded">Embedded</span>
-            </div>
-
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <div class="highlight-value">Patent</div>
-                <div class="highlight-label">Filed 2023–24</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">YOLOv8</div>
-                <div class="highlight-label">Person Detection</div>
-              </div>
-              <div class="highlight-item">
-                <div class="highlight-value">Energy</div>
-                <div class="highlight-label">Optimized</div>
-              </div>
-            </div>
-
-            <ul>
-              <li><strong>IoT Optimization:</strong> Smart elevator dispatch system with advanced features; ML-powered decision making</li>
-              <li><strong>Computer Vision:</strong> YOLOv8 person detection + IR sensors for occupancy and passenger flow prediction</li>
-              <li><strong>Predictive Management:</strong> Energy-aware optimization; predictive time-of-call estimation for improved user experience</li>
-              <li><strong>Co-inventors:</strong> Dr. Sahaya Beni Prathiba B</li>
-            </ul>
-
-            <div class="project-actions">
-              <a href="mailto:kikaniatman@gmail.com?subject=Smart Elevator Patent Inquiry" class="project-link">
-                <i class="fas fa-envelope"></i> Inquire
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <hr />
-
-      <!-- ========== RESEARCH SECTION ========== -->
-      <section class="research">
-        <h2>Research & Publications</h2>
-
-        <article class="publication">
+        <article class="research-project">
           <h3>MARVO: Marine-Adaptive Radiance-aware Visual Odometry</h3>
-          <p class="publication-meta">Atman Kikani, Dr. A Nayeemulla Khan</p>
-          <p class="publication-venue"><strong>Venue:</strong> IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)</p>
-          <p class="publication-status"><strong>Status:</strong> Under review (submitted November 2025)</p>
+          <p class="research-intro">Transformers meet underwater SLAM for robust visual-inertial odometry in turbid environments</p>
+          
+          <div class="research-narrative">
+            <p><strong>Challenge:</strong> Underwater SLAM fails in turbid, low-visibility conditions due to color attenuation and light scattering.</p>
+            <p><strong>Approach:</strong> MARVO combines Transformer-based feature matching with physics-aware radiance correction and RL-based pose graph optimization, enabling robust autonomous navigation in challenging marine environments.</p>
+          </div>
+
+          <div class="marvo-overview">
+            <div class="marvo-highlight">
+              <strong>Key Innovation:</strong> Physics-aware radiance correction models color-channel attenuation with depth
+            </div>
+            <div class="marvo-highlight">
+              <strong>Architecture:</strong> Multi-sensor fusion (visual + IMU + barometer) via GTSAM + RL-based optimization
+            </div>
+            <div class="marvo-highlight">
+              <strong>Venue:</strong> Submitted to CVPR 2026
+            </div>
+          </div>
+
+          <div class="marvo-techs">
+            <span class="research-tag">SLAM</span>
+            <span class="research-tag">Transformers</span>
+            <span class="research-tag">Underwater Vision</span>
+            <span class="research-tag">RL Optimization</span>
+            <span class="research-tag">CVPR 2026</span>
+          </div>
+
+          <div class="marvo-actions">
+            <a href="supplementary/Publications, Drafts and Results/MARVO/MARVO_CVPR_26.pdf" class="pub-link" target="_blank">
+              <i class="fas fa-file-pdf"></i> Read Paper
+            </a>
+            <a href="supplementary/Publications, Drafts and Results/MARVO/images/" class="pub-link" target="_blank">
+              <i class="fas fa-images"></i> View Results
+            </a>
+          </div>
         </article>
 
-        <article class="publication">
-          <h3>HADVel: Hydrodynamics Aware Deep Velocity Estimation for AUVs</h3>
-          <p class="publication-meta">Atman Kikani, Dr. Harini S, Dr. K Karunamurthy</p>
-          <p class="publication-venue"><strong>Venue:</strong> IEEE Robotics and Automation Letters</p>
-          <p class="publication-status"><strong>Status:</strong> Manuscript in preparation</p>
-        </article>
-
-        <article class="publication">
-          <h3>HADVel-E: Real Time Embedded Deployment of Hydrodynamics Aware Deep Velocity Estimation</h3>
-          <p class="publication-meta">Atman Kikani, Dr. Harini S, Dr. K Karunamurthy</p>
-          <p class="publication-venue"><strong>Venue:</strong> IEEE Sensors</p>
-          <p class="publication-status"><strong>Status:</strong> Manuscript in preparation</p>
-        </article>
-
-        <article class="publication">
-          <h3>A Smart Elevator System and Method Thereof</h3>
-          <p class="publication-meta"><strong>Patent:</strong> Indian Patent Office Application No. 202441007367</p>
-          <p class="publication-status"><strong>Filed:</strong> July 2023 – February 2024 | <strong>Advisor:</strong> Dr. Sahaya Beni Prathiba B</p>
-        </article>
       </section>
 
       <hr />
 
-      <!-- ========== COMPETITIONS & LEADERSHIP SECTION ========== -->
-      <section class="competitions">
-        <h2>Competitions & Leadership</h2>
-
-        <article class="competition">
-          <img src="images/tac-norway.jpg" alt="TAC Norway 2024" class="competition-image" />
-          <div class="competition-content">
-            <h3>TAC Challenge 2024, Norway – 2nd Place</h3>
-            <p class="competition-meta">International AUV Competition</p>
-            <ul>
-              <li><strong>Control Stack:</strong> Cascaded PID across 6 DOF</li>
-              <li><strong>Optimization:</strong> 60% control loop latency reduction via ROS-MAVLINK</li>
-              <li><strong>Tuning:</strong> Adaptive gradient descent for PID parameter optimization</li>
-              <li><strong>Tasks:</strong> Subsea docking, pipeline inspection, object detection, valve manipulation, autonomous navigation, wireless communications</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="competition">
-          <h3>IEEE OES Singapore AUV Challenge 2025</h3>
-          <p class="competition-meta">Current Competition</p>
-          <ul>
-            <li><strong>Platform:</strong> Project MIRA 2.0</li>
-            <li><strong>Focus:</strong> Complete autonomy stack – control, perception, mission planning</li>
-            <li><strong>Integration:</strong> System integration and comprehensive testing</li>
-          </ul>
-        </article>
-
-        <article class="leadership">
-          <h3>Dreadnought Robotics, VIT Chennai – Leadership</h3>
-          <ul>
-            <li>
-              <strong>Sep 2024 – Present:</strong> AUV Head / Technical Head
-            </li>
-            <li>
-              <strong>Sep 2023 – Sep 2024:</strong> Deputy Team Lead / Head of Operations
-            </li>
-            <li>
-              <strong>Apr 2023 – Oct 2023:</strong> Member of Programming and Analysis (Controls Lead)
-            </li>
-            <li>
-              <strong>Award:</strong> Best Special Team 2023-24
-            </li>
-            <li>
-              <strong>Mentorship:</strong> Guided 8 junior members in ROS2, embedded systems, and control theory
-            </li>
-            <li>
-              <strong>Outreach:</strong> Delivered 4 technical workshops
-            </li>
-          </ul>
-        </article>
+      <!-- ========== EXPERIENCE SECTION ========== -->
       </section>
 
       <hr />

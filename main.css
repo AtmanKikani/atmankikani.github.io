@@ -114,46 +114,565 @@ hr {
     margin: 2rem 0;
 }
 
-/* At a Glance Section */
-.stats-grid {
+/* Engineering Projects Grid Section */
+.projects-grid-section {
+    margin: 2rem 0;
+}
+
+.projects-grid-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 0.5rem;
+}
+
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
     margin: 1.5rem 0;
 }
 
-.stat-card {
-    text-align: center;
+.project-grid-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-grid-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transform: translateY(-6px);
+}
+
+.grid-card-media {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.grid-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.grid-card-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-grid-card:hover .grid-card-media img {
+    transform: scale(1.08);
+}
+
+.grid-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(21, 101, 192, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-grid-card:hover .grid-card-overlay {
+    opacity: 1;
+}
+
+.grid-card-overlay i {
+    font-size: 2rem;
+    color: white;
+}
+
+.grid-card-content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.grid-card-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    line-height: 1.3;
+}
+
+.grid-card-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.grid-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+}
+
+.grid-tag {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    background-color: #e3f2fd;
+    color: #0277bd;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+
+/* Featured/Monocopter Card - Horizontal Layout */
+.project-grid-card--featured {
+    grid-column: span 2;
+    flex-direction: row;
+}
+
+.project-grid-card--featured .grid-card-media {
+    width: 50%;
+    height: auto;
+    min-height: 300px;
+    flex-shrink: 0;
+}
+
+.project-grid-card--featured .grid-card-content {
+    width: 50%;
+    justify-content: center;
+}
+
+.grid-card-media--video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+}
+
+.grid-card-media--video video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+    font-weight: 600;
+}
+
+/* Dreadnought Robotics & Competitions Section */
+.dreadnought-section {
+    margin: 2rem 0;
+}
+
+.dreadnought-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 0.5rem;
+}
+
+.timeline-container {
+    position: relative;
+    padding: 1rem;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #1565c0 0%, #0d47a1 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
     padding: 1.5rem;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: box-shadow 0.3s ease;
 }
 
-.stat-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+.timeline-marker {
+    position: absolute;
+    left: calc(-1rem - 2px);
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background-color: #1565c0;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #1565c0;
 }
 
-.stat-number {
-    font-size: 2.5rem;
+.timeline-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+.timeline-date {
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.timeline-date .award {
+    background-color: #fff3e0;
+    color: #e65100;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
     font-weight: 600;
+}
+
+.timeline-content p {
+    margin: 0.5rem 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.timeline-content ul {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+}
+
+.timeline-content li {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.timeline-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.timeline-tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: #f0f0f0;
     color: #1565c0;
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    font-size: 1rem;
+    border-radius: 16px;
+    font-size: 0.8rem;
     font-weight: 600;
-    color: #333;
-    margin-bottom: 0.5rem;
 }
 
-.stat-card p {
+/* MIRA Showcase */
+.mira-showcase {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border-left: 4px solid #ffd700;
+}
+
+.mira-showcase h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+}
+
+.mira-tagline {
+    margin: 0 0 1.5rem 0;
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+}
+
+.mira-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.mira-media {
+    width: 100%;
+}
+
+.mira-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mira-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.mira-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+}
+
+.mira-metric {
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1565c0;
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.mira-tech {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.mira-tech strong {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.mira-features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.mira-features li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.mira-features li:before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #1565c0;
+    font-weight: bold;
+}
+
+.mira-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.action-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.action-link:hover {
+    background-color: #0d47a1;
+    box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Research Spotlight Section */
+.research-spotlight {
+    margin: 2rem 0;
+}
+
+.research-spotlight h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 0.5rem;
+}
+
+.research-project {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.research-project h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    line-height: 1.3;
+}
+
+.research-intro {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    color: #1565c0;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.research-narrative {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+.research-narrative p {
+    margin: 0.75rem 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.research-narrative strong {
+    color: #333;
+}
+
+.hadvel-papers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.publication-card {
+    background-color: #f9f9f9;
+    padding: 1.25rem;
+    border-radius: 8px;
+    border-left: 3px solid #1565c0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.publication-card h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #1a1a1a;
+}
+
+.pub-venue,
+.pub-status {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.pub-status {
+    color: #1565c0;
+    font-weight: 500;
+}
+
+.pub-desc {
     margin: 0;
     font-size: 0.9rem;
-    color: #777;
+    color: #666;
+    line-height: 1.5;
+    flex: 1;
 }
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+}
+
+.pub-link:hover {
+    background-color: #0d47a1;
+}
+
+.marvo-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #e3f2fd;
+    border-radius: 6px;
+}
+
+.marvo-highlight {
+    color: #0277bd;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.marvo-highlight:before {
+    content: '●';
+    position: absolute;
+    left: 0;
+}
+
+.marvo-techs,
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1rem 0;
+}
+
+.research-tag {
+    display: inline-block;
+    padding: 0.4rem 0.85rem;
+    background-color: #f0f0f0;
+    color: #1565c0;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.marvo-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Responsive - Mobile */
 
 /* Projects Section */
 .project-card {
@@ -794,8 +1313,102 @@ hr {
         font-size: 1.1rem;
     }
 
-    .stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Projects Grid Mobile */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .grid-card-content {
+        padding: 1rem;
+    }
+
+    .project-grid-card--featured {
+        grid-column: span 1;
+        flex-direction: column;
+    }
+
+    .project-grid-card--featured .grid-card-media {
+        width: 100%;
+        height: 200px;
+        min-height: unset;
+    }
+
+    .project-grid-card--featured .grid-card-content {
+        width: 100%;
+    }
+
+    .grid-card-media--video {
+        aspect-ratio: auto;
+        height: 200px;
+    }
+
+    .grid-card-media--video video {
+        object-fit: cover;
+    }
+
+    /* Timeline Mobile */
+    .timeline-container::before {
+        left: 0.5rem;
+    }
+
+    .timeline-item {
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+
+    .timeline-marker {
+        left: calc(-0.5rem - 2px);
+    }
+
+    .timeline-date {
+        font-size: 0.85rem;
+    }
+
+    /* MIRA Grid Mobile */
+    .mira-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .mira-metrics {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .metric-value {
+        font-size: 1.2rem;
+    }
+
+    .mira-actions {
+        flex-direction: column;
+    }
+
+    .action-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Research Spotlight Mobile */
+    .research-project {
+        padding: 1.25rem;
+    }
+
+    .hadvel-papers {
+        grid-template-columns: 1fr;
+    }
+
+    .marvo-overview {
+        padding: 0.75rem;
+    }
+
+    .marvo-actions {
+        flex-direction: column;
+    }
+
+    .pub-link {
+        width: 100%;
+        justify-content: center;
     }
 
     /* Mobile-optimized project cards */
