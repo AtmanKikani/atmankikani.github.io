@@ -69,6 +69,24 @@
       <section class="projects-grid-section">
         <h2>Engineering Projects</h2>
         <div class="projects-grid">
+            <a href="#dreadnought-timeline" class="project-grid-card">
+                <div class="grid-card-media">
+                  <video src="supplementary/Videos%20and%20Photos/Mira%20-%20Autonomous%20Underwater%20Vehicle/Mira_videoplayback.mp4" alt="MIRA 2.0 AUV" autoplay muted loop></video>
+                  <div class="grid-card-overlay">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              <div class="grid-card-content">
+                <h3>MIRA 2.0 – Autonomous Underwater Vehicle</h3>
+                <p>A competition-proven 6-DOF AUV platform for advanced autonomy, real-time control, and system integration. See the Dreadnought Robotics timeline below for the full story and technical details.</p>
+                <div class="grid-tags">
+                  <span class="grid-tag">AUV</span>
+                  <span class="grid-tag">ROS2</span>
+                  <span class="grid-tag">MPC</span>
+                  <span class="grid-tag">Jetson</span>
+                </div>
+              </div>
+            </a>
           
           <a href="projects/cubli.html" class="project-grid-card">
             <div class="grid-card-media">
@@ -78,11 +96,13 @@
               </div>
             </div>
             <div class="grid-card-content">
-              <h3>ESP32 Cubli</h3>
-              <p>3-DOF reaction-wheel inverted pendulum</p>
+              <h3>ESP32 Cubli – Reaction‑Wheel Inverted Pendulum</h3>
+              <p>A 3‑DOF reaction‑wheel inverted pendulum used as a testbed for comparing PID, backstepping, MPC, and LQR controllers, with an open MATLAB toolbox for control benchmarking.</p>
               <div class="grid-tags">
                 <span class="grid-tag">Control</span>
-                <span class="grid-tag">Real-time</span>
+                <span class="grid-tag">ESP32</span>
+                <span class="grid-tag">MPC</span>
+                <span class="grid-tag">LQR</span>
               </div>
             </div>
           </a>
@@ -95,16 +115,17 @@
               </div>
             </div>
             <div class="grid-card-content">
-              <h3>Thrust-Vectored Monocopter</h3>
-              <p>Single-rotor autonomous aerial platform</p>
+              <h3>Thrust‑Vectored Monocopter</h3>
+              <p>A single‑rotor thrust‑vectored drone with custom Pixhawk firmware that stabilizes highly asymmetric dynamics for autonomous hover and position control at ultralight weight.</p>
               <div class="grid-tags">
                 <span class="grid-tag">Aerial</span>
+                <span class="grid-tag">Pixhawk</span>
                 <span class="grid-tag">Control</span>
               </div>
             </div>
           </a>
 
-          <a href="projects/imu-surface-mapper.html" class="project-grid-card">
+          <a href="projects/imu-mapper.html" class="project-grid-card">
             <div class="grid-card-media">
               <img src="supplementary/Project%20Posters/IMU_based_surface_mapping_in_differential_drive_robots_page-0001.jpg" alt="IMU-based surface mapping robot poster" />
               <div class="grid-card-overlay">
@@ -112,45 +133,50 @@
               </div>
             </div>
             <div class="grid-card-content">
-              <h3>IMU Surface Mapper</h3>
-              <p>Differential drive robot localization</p>
+              <h3>IMU‑Based Sparse Surface Mapper</h3>
+              <p>A sensor‑fusion pipeline that uses IMU and odometry to reconstruct sparse 3D surface structure for differential‑drive robots on low‑cost hardware.</p>
               <div class="grid-tags">
                 <span class="grid-tag">SLAM</span>
-                <span class="grid-tag">Embedded</span>
+                <span class="grid-tag">IMU</span>
+                <span class="grid-tag">EKF</span>
+                <span class="grid-tag">Mapping</span>
               </div>
             </div>
           </a>
 
-          <a href="#research-hadvel" class="project-grid-card">
+          <a href="#hadvel-project" class="project-grid-card">
             <div class="grid-card-media">
-              <img src="images/dpss.jpg" alt="DPSS differential pressure sensor" />
+              <img src="supplementary/Publications,%20Drafts%20and%20Results/HaDVel/images/pcb_layer_render.png" alt="DPSS PCB render" />
               <div class="grid-card-overlay">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
             <div class="grid-card-content">
-              <h3>DPSS Hardware</h3>
-              <p>Precursor to HADVel velocity estimation</p>
+              <h3>DPSS – Differential Pressure Speed Sensor</h3>
+              <p>An underwater velocity sensor combining differential pressure and a 9‑DOF IMU, forming the hardware backbone for the HADVel deep velocity estimation project.</p>
               <div class="grid-tags">
-                <span class="grid-tag">Sensor Fusion</span>
+                <span class="grid-tag">Sensors</span>
                 <span class="grid-tag">AUV</span>
+                <span class="grid-tag">Hardware</span>
               </div>
             </div>
           </a>
 
-          <a href="projects/auv-mocap.html" class="project-grid-card">
+          <a href="projects/frame.html" class="project-grid-card">
             <div class="grid-card-media">
-              <img src="images/mocap.jpg" alt="AUV motion capture system" />
+              <video src="supplementary/Videos%20and%20Photos/FRAME–Flexible%20Reference%20ArUco%20Multi%E2%80%91camera%20Estimation/FRAME_Video.webm" alt="FRAME – Flexible Reference ArUco Multi‑camera Estimation demo" autoplay muted loop></video>
               <div class="grid-card-overlay">
                 <i class="fas fa-arrow-right"></i>
               </div>
             </div>
             <div class="grid-card-content">
-              <h3>AUV Motion Capture</h3>
-              <p>Real-time vehicle tracking and telemetry</p>
+              <h3>FRAME – Flexible Reference ArUco Multi‑camera Estimation</h3>
+              <p>Dynamic, world-anchored pose estimation with movable cameras—no calibration required. Each camera computes object pose in the world frame using ArUco markers, enabling flexible, accurate multi-camera tracking.</p>
               <div class="grid-tags">
                 <span class="grid-tag">Vision</span>
-                <span class="grid-tag">AUV</span>
+                <span class="grid-tag">ArUco</span>
+                <span class="grid-tag">Multi-camera</span>
+                <span class="grid-tag">Tracking</span>
               </div>
             </div>
           </a>
@@ -164,9 +190,10 @@
             </div>
             <div class="grid-card-content">
               <h3>Smart Elevator System</h3>
-              <p>IoT patent: YOLOv8 + predictive dispatch</p>
+              <p>An IoT‑enabled elevator control system using YOLOv8 person detection and IR sensing to optimize traffic patterns and reduce energy consumption, filed as an Indian patent.</p>
               <div class="grid-tags">
                 <span class="grid-tag">IoT</span>
+                <span class="grid-tag">Computer Vision</span>
                 <span class="grid-tag">Patent</span>
               </div>
             </div>
@@ -178,7 +205,7 @@
       <hr />
 
       <!-- ========== DREADNOUGHT ROBOTICS & COMPETITIONS SECTION ========== -->
-      <section class="dreadnought-section" id="competitions">
+      <section class="dreadnought-section" id="dreadnought-timeline">
         <h2>Dreadnought Robotics & Competitions</h2>
 
         <div class="timeline-container">
@@ -228,69 +255,13 @@
 
         </div>
 
-        <!-- MIRA Deep Dive -->
-        <div class="mira-showcase">
-          <h3>MIRA 2.0 – Autonomous Underwater Vehicle</h3>
-          <p class="mira-tagline">Advanced 6-DOF AUV for competition autonomy and real-world deployment</p>
-          
-          <div class="mira-grid">
-            <div class="mira-media">
-              <img src="images/mira.jpg" alt="MIRA 2.0 AUV" class="mira-image" />
-            </div>
-            
-            <div class="mira-content">
-              <div class="mira-metrics">
-                <div class="mira-metric">
-                  <div class="metric-value">60%</div>
-                  <div class="metric-label">Latency Reduction</div>
-                </div>
-                <div class="mira-metric">
-                  <div class="metric-value">35%</div>
-                  <div class="metric-label">Sampling Increase</div>
-                </div>
-                <div class="mira-metric">
-                  <div class="metric-value">6-DOF</div>
-                  <div class="metric-label">Control Stack</div>
-                </div>
-              </div>
-
-              <div class="mira-tech">
-                <strong>Technology Stack:</strong>
-                <div class="tech-tags">
-                  <span class="tag tag-ros">ROS2</span>
-                  <span class="tag tag-control">MPC</span>
-                  <span class="tag tag-hardware">Jetson Xavier NX</span>
-                  <span class="tag tag-hardware">Pixhawk 4</span>
-                </div>
-              </div>
-
-              <ul class="mira-features">
-                <li><strong>6-DOF Control:</strong> Cascaded PID, MPC for stable vehicle maneuvering</li>
-                <li><strong>Mission Planning:</strong> Fuzzy logic replacing brittle decision trees; adaptive behaviors</li>
-                <li><strong>ROS2-MAVLINK Integration:</strong> 60% latency reduction through optimized message queuing</li>
-                <li><strong>System Identification:</strong> LSE/MLE hydrodynamic parameter estimation</li>
-                <li><strong>Asynchronous Sensor Acquisition:</strong> 35% sampling rate increase via buffered pipeline</li>
-                <li><strong>Hardware:</strong> Jetson Xavier NX, Pixhawk 4, 6× T200 thrusters, multi-sensor suite</li>
-              </ul>
-
-              <div class="mira-actions">
-                <a href="supplementary/Videos and Photos/Mira - Autonomous Underwater Vehicle/" class="action-link" target="_blank">
-                  <i class="fas fa-folder-open"></i> View Media
-                </a>
-                <a href="supplementary/Competition Certificates/TAC Challenge 2024 Dreadnought Second Place.pdf" class="action-link" target="_blank">
-                  <i class="fas fa-award"></i> TAC Certificate
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </section>
 
       <hr />
 
       <!-- ========== RESEARCH SPOTLIGHT SECTION ========== -->
-      <section class="research-spotlight" id="research-hadvel">
+      <section class="research-spotlight" id="hadvel-project">
         <h2>Research Spotlight</h2>
 
         <article class="research-project">
